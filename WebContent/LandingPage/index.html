@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="The best site">
+    <meta property="og:image" content="link_to_image">
+    <meta property="og:description" content="description goes here">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>function validateForm() {
+	    var x = document.forms["myForm"]["email_id"].value;
+	    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	    var y = document.forms["myForm"]["name"].value;
+	    if (y == null || y == "") {
+		        document.getElementById("error1").innerHTML = "*Enter your Name";
+		        document.getElementById("name").focus();
+		        return false;
+		    }
+	    if (x == null || x == "") {
+	    	document.getElementById("error2").innerHTML = "*Enter Email Id";
+	    	document.getElementById("email_id").focus();
+	        return false;
+	    }
+	    
+	    if(!re.test(x)){
+	    	document.getElementById("error2").innerHTML = "*Enter valid Email Id";
+	    	document.getElementById("email_id").value = "";
+	    	document.getElementById("email_id").focus();
+	    	return false;
+	    }
+	 
+	    
+	}
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">            
+            <div class="col-xs-12 col-sm-6 col-md-6 logo">
+                <img src="img/logo.png" />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 call-center-number">
+                <label>CALL <span class="call-number">555-123-4567</span></label>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="separator red col-xs-12"></div>
+                <div class="banner col-xs-12" style="background-image: url(img/banner-image.png)">
+                    <div class="proposal-form col-xs-12 col-sm-10 col-md-8">
+
+                        <div class="proposal-form-title col-xs-12">
+                            <div class="row">
+                                <h1><span class="red-color">Professional</span> Painters</h1>
+                                <h2>of largo, clearwater, tampa</h2>
+                                <div class="proposal-form-separator col-xs-10 col-sm-8"></div>
+                                <h3>We Care About More Than Paint!</h3>
+                            </div>
+                        </div>
+                        <div class="schedule-free-estimate col-xs-12">
+                            <p>Schedule Your free Estimate</p>
+                            <p>to redeem promo code for</p>
+                            <p class="bold">$150 off</p>
+                            <p>Any job of $3000 or more!</p>
+                        </div>
+                        <div class="proposal-form-inputs col-xs-12">
+                            <div class="center-container col-xs-12 col-sm-10 col-md-8">
+                              <form name="myForm" action="submit.jsp" onsubmit="return validateForm()" method="post">
+                                <div class="row">
+                                    <label class="col-xs-12 col-sm-3 col-md-2">Name</label>
+                                    <input class="col-xs-12 col-sm-7 col-md-8" type="text" name="name" id="name"/>
+                                    <div class="col-xs-12 col-sm-7 col-md-8" id = "error1" style = "color:red;"></div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-xs-12 col-sm-3 col-md-2">Email</label>
+                                    <input class="col-xs-12 col-sm-7 col-md-8" type="text" name="email_id" id="email_id"/>
+                                    <div class="col-xs-12 col-sm-7 col-md-8" id = "error2" style = "color:red;"></div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-xs-12 col-sm-3 col-md-2">Phone</label>
+                                    <input class="col-xs-12 col-sm-7 col-md-8" type="text" name="phone" id="phone"/>
+                                </div>
+                                <button type="submit">save $150</button>
+                              </form>
+                            </div>
+                        </div>
+                        <div class="proposal-form-footer col-xs-12">
+                            <div class="row">
+                                <ul>
+                                    <li class="col-xs-12 col-sm-4"><i class="fa fa-check-circle"></i><label>Quality Work</label></li>
+                                    <li class="col-xs-12 col-sm-4"><i class="fa fa-check-circle"></i><label>Professional Painters</label></li>
+                                    <li class="col-xs-12 col-sm-4"><i class="fa fa-check-circle"></i><label>Felxible Schedules</label> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="separator blue col-xs-12"></div>
+            </div>
+        </div>
+
+    </header>
+    <div class="group"></div>
+    <div class="wrapper container">
+        <div class="row">
+            <div class="proposal col-xs-11">
+                <article class="row">
+
+                    <div class="proposal-info col-xs-12">
+                        <div class="row">
+                            <div class="proposal-info-title col-xs-12">
+                                <h1>Professional Painters</h1>
+                            </div>
+                            <div class="proposal-info-subtitle col-xs-12">
+                                <h2>Tackling Residential &#38; Commercial Painting Projects</h2>
+                            </div>
+                            <div class="proposal-info-content col-xs-12">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida massa pharetra, tempor ligula ut, aliquet nulla. Quisque eu quam turpis. Sed porttitor mauris nec quam dignissim, et placerat odio scelerisque. In hac habitasse platea dictumst. Proin et accumsan nunc, sit amet bibendum purus. Proin at euismod ante. Phasellus ipsum orci, feugiat tristique mollis vitae, sagittis sollicitudin libero. In tempus ex non ipsum pretium, ac consequat justo fringilla.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="proposal-why-they-choose-us col-xs-12">
+                        <div class="row">
+                            <div class="proposal-info-subtitle col-xs-12">
+                                <h2>Why Clients Choose to Hire Our Team:</h2>
+                            </div>
+                            <div class="proposal-info-content col-xs-12">
+                                <ul>
+                                    <li><p>Mauris sit amet urna et leo pulvinar tristique.</p></li>
+                                    <li><p>Nam eu eros mollis, interdum sapien tincidunt, accumsan erat.</p></li>
+                                    <li><p>Maecenas rutrum libero ac diam volutpat, eu vehicula risus molestie.</p></li>
+                                    <li><p>Mauris at tellus in lacus efficitur fringilla.</p></li>
+                                    <li><p>Nullam lacinia nulla eget quam ornare blandit.</p></li>
+                                    <li><p>Sed mollis magna eu mi aliquet scelerisque.</p></li>
+                                </ul>
+                                <p>Donec aliquam sit amet nisi sed consequat. Etiam non gravida nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean feugiat lacinia velit non lacinia. Proin eget tristique leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="call-to-action red col-xs-12">
+                        <h1>SCHEDULE YOUR FREE ESTIMATE! <span class="number">555-123-4567</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="group"></div>
+        <div class="container-fluid">               
+            <div class="row">
+                <div class="separator blue small"></div>
+            </div>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+    </footer>
+</body>
+
+
+</html>

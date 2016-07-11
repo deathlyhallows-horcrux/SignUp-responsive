@@ -1,0 +1,301 @@
+/*
+    blue: #004b8d
+    red: #c41230
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+ul, li {
+    padding: 0px;
+}
+img {
+    max-width: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1.5;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.clear {
+    clear: both;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.Fright {
+    float: right;
+}
+.Fleft {
+    float: left;
+}
+.Fnone {
+    float: none;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header {
+    height: 122px;
+}
+header .container {
+    padding: 26px 0px 24px;
+}
+
+.center-container {
+    float: none;
+    margin: 0 auto;
+}
+
+.call-center-number {
+    color: #004b8d;
+    font-size: 3em;
+    text-align: right;
+    height: 71px;
+}
+.call-number {
+    color: #c41230;
+}
+.separator {
+    height: 20px;
+    width: 100%;
+}
+.red-color {
+    color: #c41230;
+}
+.blue-color {
+    color: #004b8d;
+}
+.red.separator {
+    background-color: #c41230;
+}
+.blue.separator {
+    background-color: #004b8d;
+    height: 32px;
+}
+.small.separator {
+    height: 12px;
+}
+.banner {
+    background-image: url('../img/banner-image.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 922px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.proposal-form {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 5px;
+    text-align: center;
+    height: 90%;
+    max-height: 90%;
+    position: relative;
+    top: 5%;
+}
+.proposal-form-separator {
+    border: 2px solid #c41230;
+    margin: 0 auto;
+    float: none;
+}
+.proposal-form-title h1,
+.proposal-form-title h2,
+.proposal-form-title h3 {
+    color: #004b8d;
+    text-transform: uppercase;
+}
+.proposal-form-title h1 {
+    font-size: 4.667em;
+    line-height: 46px;
+}
+.proposal-form-title h2 {
+    font-size: 3em;
+}
+.proposal-form-title h3 {
+    text-transform: capitalize;
+    font-size: 2.417em;
+    margin-top: 28px;
+    margin-bottom: 38px;
+}
+.schedule-free-estimate {
+    background-color: rgba(204,0,51,0.8);
+    color: #FFFFFF;
+    font-size: 2em;
+    font-weight: 700;
+    max-height: 190px;
+    text-transform: uppercase;
+}
+.schedule-free-estimate p {
+    margin: 0px;
+}
+.schedule-free-estimate p:last-child {
+    font-size: 1em;
+}
+.schedule-free-estimate .bold {
+    font-size: 90px;
+    line-height: 80px;
+}
+.proposal-form-inputs {
+    padding: 20px 0px;
+}
+.proposal-form-inputs div {
+    margin-bottom: 10px;
+}
+.proposal-form-inputs label {
+    font-size: 1.5em;
+    line-height: 40px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-align: right;
+}
+.proposal-form-inputs input {
+    height: 40px;
+    font-size: 1.5em;
+    border: 1px solid #cccccc;
+}
+.proposal-form-inputs button {
+    background-color: #cc0033;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    font-size: 2.667em;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 256px;
+    height: 62px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.proposal-form-footer {
+    background-color: rgba(0, 75, 141, 0.85);
+    min-height: 68px;
+    font-size: 1.833em;
+    position: relative;
+    width: calc(100%);
+    left: 0px;
+    bottom: 0px;
+}
+.proposal-form-footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    min-height: 68px;
+}
+.proposal-form-footer ul li {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #FFFFFF;
+    padding: 0px;   
+}
+.proposal-form-footer ul li i {
+    margin-right: 8px;
+}
+.proposal-form-footer ul li label {
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+/* BODY */
+.proposal {
+    font-size: 1.5em;
+    padding: 50px 0px 40px;
+    float: none;
+    margin: 0 auto;
+}
+.proposal-info-title {
+    font-size: 4.167em;
+    color: #c41230;
+}
+.proposal-info-subtitle {
+    font-size: 2.500em;
+    color: #004b8d;
+    margin-bottom: 30px;
+}
+.proposal-info-content ul {
+    list-style-type: none;
+    position: relative;
+}
+.proposal-info-content ul li {
+    color: #c41230;
+    margin-bottom: 15px;
+    position: relative;
+}
+.proposal-info-content ul li:before {
+    content: "";
+    background: url('../img/bullet-painter.png') 50% 50% no-repeat transparent;
+    background-size: 100% 100%;
+    position: absolute;
+    height: 16px;
+    width: 30px;
+    left: -39px;
+    top: 2px;
+}
+/* END BODY */
+/* FOOTER */
+footer {
+    height: 130px;
+}
+footer div.container-fluid:first-child {
+    background-color: #c41230;
+}
+.call-to-action {
+    height: 76px;
+    font-size:  2.500em;
+    text-transform: uppercase;
+    background-color: #c41230;
+    color: #FFFFFF;
+    text-align: center;
+}
+/* END FOOTER */
